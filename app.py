@@ -11,7 +11,7 @@ SECRET_KEY = "HS256"
 # SECRET_KEY = os.environ.get("SECRET_KEY")  
 @app.route('/', methods=['GET'])
 def index():
-    return jsonify({"message": "Decode token run" })
+    return jsonify({"message": "API made by @dear_sumi is alive" })
 
 @app.route('/decode', methods=['GET'])
 def decode_jwt():
